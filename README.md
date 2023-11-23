@@ -1,6 +1,6 @@
 README
 
-**Fuel consumption of different car models in Canada**
+## Fuel consumption of different car models in Canada ##
 
 
 ## Project Overview:

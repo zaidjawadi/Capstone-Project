@@ -2,7 +2,8 @@ README
 
 **Fuel consumption trends and forecasting across different car models in Canada**
 
-Project Overview:
+
+## Project Overview:
 
 
 The Problem Area:
@@ -54,4 +55,4 @@ FUEL CONSUMPTION COMB (L/100 km): Combined city (55%) and highway (45%) driving 
 FUEL CONSUMPTION COMB (mpg): Same as FUEL CONSUMPTION COMB (L/100 km) but in miles per gallon.
 CO2 EMISSIONS (g/km): The tailpipe emissions of carbon dioxide (in grams per kilometre) for combined city and highway driving. 
 CO2 RATING: The tailpipe emissions of carbon dioxide rated on a scale from 1 (worst) to 10 (best)
-SMOG RATING: The tailpipe emissions of smog-forming pollutants rated on a scale from 1 (worst) to 10 (best)
+Smog RATING: The tailpipe emissions of smog-forming pollutants rated on a scale from 1 (worst) to 10 (best)

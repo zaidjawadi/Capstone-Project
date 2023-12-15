@@ -56,3 +56,50 @@ FUEL CONSUMPTION COMB (mpg): Same as FUEL CONSUMPTION COMB (L/100 km) but in mil
 CO2 EMISSIONS (g/km): The tailpipe emissions of carbon dioxide (in grams per kilometre) for combined city and highway driving. 
 CO2 RATING: The tailpipe emissions of carbon dioxide rated on a scale from 1 (worst) to 10 (best)
 Smog RATING: The tailpipe emissions of smog-forming pollutants rated on a scale from 1 (worst) to 10 (best)
+
+
+
+Sprint 2:
+15Dec2023
+
+In this sprint, I performed more EDA and preprocessing where I explored the relationships between the different features and the target variable, CO2 Emissions (g/km). I cleaned the data where I removed unneccessary columns, converted categorical variables to numeric, and explored the correlations between the variables and the target variable. I started modeling with linear regression after converting all columns to numeric. The model appears to perform well; however, it is worth further exploring to ensure that it is not overfitting. This will be done by removing highly correlated variables using VIF and performing PCA. I will also scale the data and redo linear regression. I also did a decision tree model, which also performed well based on R-squared and RMSE values. However, it is worth further exploring to avoid overfitting the data. 
+
+I updated the data dictionary to define two more features: ENGINE SIZE (L) and CYLINDERS.
+Data Dictionary:
+- YEAR: The year the car model was made. It ranges from 1995 - 2023
+- MAKE: The brand of the car.
+- MODEL: The corresponding model from the brand of the car. Some abbreviations:
+     - 4WD/4X4 = Four-wheel drive
+     - AWD = All-wheel drive
+     - FFV = Flexible-fuel vehicle
+     - SWB = Short wheelbase
+     - LWB = Long wheelbase
+     - EWB = Extended wheelbase
+- VEHICLE: The class of the vehicle 
+- CYLINDERS: Generally, the more cylinders an engine has, the more power is generated.
+- ENGINE SIZE (L): The volume of fuel and air that can be pushed through a car's cylinders
+- TRANSMISSION: 
+     - A = Automatic
+     - AM = Automated manual
+     - AS = Automatic with select shift
+     - AV = Continuously variable
+     - M = Manual
+     - 3 - 10 = Number of gears
+- FUEL TYPE:
+     - X = Regular gasoline
+     - Z = Premium gasoline
+     - D = Diesel
+     - E = Ethanol (E85)
+     - N = Natural gas
+- FUEL CONSUMPTION CITY (L/100 km): City driving conditions. Measured as litres of fuel per 100 km of driving.
+- FUEL CONSUMPTION HWY (L/100 km): Highway driving conditions. Measured as litres of fuel per 100 km of driving.
+- FUEL CONSUMPTION COMB (L/100 km): Combined city (55%) and highway (45%) driving conditions. Measured as litres of fuel per 100 km of driving
+- FUEL CONSUMPTION COMB (mpg): Same as FUEL CONSUMPTION COMB (L/100 km) but in miles per gallon.
+- CO2 EMISSIONS (g/km): The tailpipe emissions of carbon dioxide (in grams per kilometre) for combined city and highway driving. 
+- CO2 RATING: The tailpipe emissions of carbon dioxide rated on a scale from 1 (worst) to 10 (best)
+- Smog RATING: The tailpipe emissions of smog-forming pollutants rated on a scale from 1 (worst) to 10 (best)
+
+
+For sprint 3, more work will be done on the modeling side: fine-tuning linear regression and decision tree models, and applying random forest, kNN, and potentially neural networks. 
+
+My project will highlight car features that help in identifying how much CO2 is emitted from a given car. As a result, it will be possible to identify how much CO2 is emitted for a given car that travels a certain mileage (annually for example). In turn, one can identify CO2 emission coming from vehicles in a given jurisdiction such as city, province, or Canada at large. 
